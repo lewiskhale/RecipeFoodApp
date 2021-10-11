@@ -15,7 +15,6 @@ import retrofit2.http.Query
 
 interface RecipeNetworkDataSource {
 
-
     //random
     @GET(RANDOM_ENDPOINT)
     suspend fun getRandomRecipes(
