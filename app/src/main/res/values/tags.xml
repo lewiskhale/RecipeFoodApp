@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="meal_types">
+        <item>main course</item>
+        <item>side dish</item>
+        <item>dessert</item>
+        <item>appetizer</item>
+        <item>salad</item>
+        <item>bread</item>
+        <item>breakfast</item>
+        <item>soup</item>
+        <item>beverage</item>
+        <item>sauce</item>
+        <item>marinade</item>
+        <item>fingerfood</item>
+        <item>snack</item>
+        <item>drink</item>
+    </string-array>
+
+    <string-array name="cuisine">
+        <item>african</item>
+        <item>american</item>
+        <item>british</item>
+        <item>cajun</item>
+        <item>caribbean</item>
+        <item>chinese</item>
+        <item>eastern European</item>
+        <item>european</item>
+        <item>french</item>
+        <item>german</item>
+        <item>greek</item>
+        <item>indian</item>
+        <item>irish</item>
+        <item>italian</item>
+        <item>japanese</item>
+        <item>jewish</item>
+        <item>korean</item>
+        <item>latin American</item>
+        <item>mediterranean</item>
+        <item>mexican</item>
+        <item>middle Eastern</item>
+        <item>nordic</item>
+        <item>southern</item>
+        <item>spanish</item>
+        <item>thai</item>
+        <item>vietnamese</item>
+    </string-array>
+    
+    <string-array name="intolerances">
+        <item>dairy</item>
+        <item>egg</item>
+        <item>gluten</item>
+        <item>grain</item>
+        <item>peanut</item>
+        <item>seafood</item>
+        <item>sesame</item>
+        <item>shellfish</item>
+        <item>soy</item>
+        <item>sulfite</item>
+        <item>tree Nut</item>
+        <item>wheat</item>
+    </string-array>
+
+    <string-array name="diets">
+        <item>gluten free</item>
+        <item>ketogenic</item>
+        <item>vegetarian</item>
+        <item>lacto-vegetarian</item>
+        <item>ovo-vegetarian</item>
+        <item>vegan</item>
+        <item>pescetarian</item>
+        <item>paleo</item>
+        <item>primal</item>
+        <item>whole30</item>
+    </string-array>
+    
+</resources>

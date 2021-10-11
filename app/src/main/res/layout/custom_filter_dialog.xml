@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/filter_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dietary_restriction_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/dietary_restrictions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filter_title" />
+
+    <GridLayout
+        android:id="@+id/dietary_restriction_grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dietary_restriction_text">
+
+        <CheckBox
+            android:id="@+id/gluten_free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gluten free" />
+
+        <CheckBox
+            android:id="@+id/vegetarian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vegetarian" />
+
+        <CheckBox
+            android:id="@+id/vegan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vegan" />
+
+        <CheckBox
+            android:id="@+id/lacto_vegetarian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lacto-vegetarian" />
+
+        <CheckBox
+            android:id="@+id/ovo_vegetarian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ovo-vegetarian" />
+
+        <CheckBox
+            android:id="@+id/pescetarian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pescetarian" />
+
+        <CheckBox
+            android:id="@+id/ketogenic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ketogenic" />
+
+        <CheckBox
+            android:id="@+id/paleo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="paleo" />
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/primal"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="primal" />-->
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/whole30"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="whole30" />-->
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/intolerances_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Intolerances: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dietary_restriction_grid_layout" />
+
+    <GridLayout
+        android:id="@+id/intolerances_grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:padding="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/intolerances_text">
+
+        <CheckBox
+            android:id="@+id/dairy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dairy" />
+
+        <CheckBox
+            android:id="@+id/egg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="egg" />
+
+        <CheckBox
+            android:id="@+id/grain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="grain" />
+
+        <CheckBox
+            android:id="@+id/peanut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="peanut" />
+
+        <CheckBox
+            android:id="@+id/shellfish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="shellfish" />
+
+        <CheckBox
+            android:id="@+id/sesame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sesame" />
+
+        <CheckBox
+            android:id="@+id/seafood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="seafood" />
+
+        <CheckBox
+            android:id="@+id/soy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="soy" />
+
+        <CheckBox
+            android:id="@+id/wheat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wheat" />
+
+        <CheckBox
+            android:id="@+id/tree_nut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tree nut" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/cancel_dialog_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="cancel"
+        android:backgroundTint="@color/red"
+        app:layout_constraintEnd_toStartOf="@+id/confirm_dialog_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intolerances_grid_layout" />
+
+    <Button
+        android:id="@+id/confirm_dialog_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/green"
+        android:text="confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cancel_dialog_button"
+        app:layout_constraintTop_toBottomOf="@+id/intolerances_grid_layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

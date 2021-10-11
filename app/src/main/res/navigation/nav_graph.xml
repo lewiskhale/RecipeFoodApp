@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/recipeListFragment">
+
+    <fragment
+        android:id="@+id/recipeListFragment"
+        android:name="com.skl.foodrecipeapp.presentation.recipelist.RecipeListFragment"
+        android:label="fragment_recipe_list"
+        tools:layout="@layout/fragment_recipe_list" >
+        <action
+            android:id="@+id/action_recipeListFragment_to_searchRecipeFragment"
+            app:destination="@id/searchRecipeFragment" />
+        <action
+            android:id="@+id/action_recipeListFragment_to_recipeDetailFragment"
+            app:destination="@id/recipeDetailFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchRecipeFragment"
+        android:name="com.skl.foodrecipeapp.presentation.recipelist.searchrecipe.SearchRecipeFragment"
+        android:label="fragment_search_recipe"
+        tools:layout="@layout/fragment_search_recipe" >
+        <action
+            android:id="@+id/action_searchRecipeFragment_to_recipeDetailFragment"
+            app:destination="@id/recipeDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.skl.foodrecipeapp.presentation.user.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.skl.foodrecipeapp.presentation.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/recipeDetailFragment"
+        android:name="com.skl.foodrecipeapp.presentation.recipedetail.RecipeDetailFragment"
+        android:label="fragment_recipe_detail"
+        tools:layout="@layout/fragment_recipe_detail" >
+        <argument
+            android:name="recipe"
+            app:argType="com.skl.foodrecipeapp.common.domain.model.Recipe" />
+    </fragment>
+</navigation>

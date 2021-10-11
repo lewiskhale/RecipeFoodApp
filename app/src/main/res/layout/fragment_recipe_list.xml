@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.recipelist.RecipeListFragment">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:singleLine="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/african"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="african"
+                android:checkable="true"/>
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/american"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="american"
+                android:checkable="true"/>
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/british"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="british"
+                android:checkable="true"/>
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/cajun"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cajun"
+                android:checkable="true"/>
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/caribbean"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="caribbean"
+                android:checkable="true"/>
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chinese"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="chinese"
+                android:checkable="true"/>
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/eastern_european"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="eastern european"
+                android:checkable="true"/>
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/european"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="european"
+                android:checkable="true"/>
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/french"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="french"
+                android:checkable="true"/>
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/german"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="german"
+                android:checkable="true"/>
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/greek"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="greek"
+                android:checkable="true"/>
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/indian"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="indian"
+                android:checkable="true"/>
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/irish"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="irish"
+                android:checkable="true"/>
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/italian"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="italian"
+                android:checkable="true"/>
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/japanese"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="japanese"
+                android:checkable="true"/>
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/jewish"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="jewish"
+                android:checkable="true"/>
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/korean"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="korean"
+                android:checkable="true"/>
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/latin_american"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="latin american"
+                android:checkable="true"/>
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/mediterranean"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mediterranean"
+                android:checkable="true"/>
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/mexican"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mexican"
+                android:checkable="true"/>
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/middle_eastern"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="middle eastern"
+                android:checkable="true"/>
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/nordic"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nordic"
+                android:checkable="true"/>
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/southern"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="southern"
+                android:checkable="true"/>
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/spanish"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="spanish"
+                android:checkable="true"/>
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/thai"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="thai"
+                android:checkable="true"/>
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/vietnamese"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="vietnamese"
+                android:checkable="true"/>
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontalscrollview"
+        tools:listitem="@layout/recipe_list_item" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
